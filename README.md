@@ -58,12 +58,20 @@ The program will output:
 ```
 Hire prediction:
 1.0
-
 Learned classification tree model:
-DecisionTreeModel classifier of depth 3 with 7 nodes
-  If (feature 0  1.5)
+DecisionTreeModel classifier of depth 4 with 9 nodes
+  If (feature 1 in {0.0})
+   If (feature 5 in {0.0})
+    If (feature 0 <= 0.5)
+     If (feature 3 in {1.0})
+      Predict: 0.0
+     Else (feature 3 not in {1.0})
+      Predict: 1.0
+    Else (feature 0 > 0.5)
+     Predict: 0.0
+   Else (feature 5 not in {0.0})
     Predict: 1.0
-  Else (feature 0 > 0.5)
+  Else (feature 1 not in {0.0})
    Predict: 1.0
 ```
 
