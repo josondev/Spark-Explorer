@@ -44,7 +44,7 @@ export PATH=$SPARK_HOME/bin:$PATH
 2. Run the decision tree classifier:
 
 ```bash
-spark-submit SparkDecisionTree.py
+spark-submit main.py
 ```
 
 ## Output
